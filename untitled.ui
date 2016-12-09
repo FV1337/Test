@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	background: #FCFCFC;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>8</y>
+      <width>1920</width>
+      <height>126</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane
+{
+	background:				#FFFFFF;
+	border-top: 					1px solid #5480EA;
+	border-bottom: 			4px solid #5480EA;
+    top:								-1px;
+}
+
+QTabWidget::tab-bar
+{
+	left:								96px;
+	background:				#FCFCFC;
+}
+
+QTabBar::tab 
+{
+    background: 				#5480EA;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #5480EA;
+    width: 							96px;
+	height:							24px;
+}
+
+QTabBar::tab:selected
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+    width: 							96px;
+	height:							24px;
+}
+
+QTabBar::tab:hover
+{
+    background: 				#3C6FEA;
+    border-bottom:			1px solid #5480EA;
+}
+
+QTabBar::tab:first:selected
+{
+	border-left:					1px solid #5480EA;
+}
+
+
+QTabBar::tab:selected:hover
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+    width: 							96px;
+	height:							24px;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>View</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tools</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>92</width>
+        <height>92</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <weight>75</weight>
+        <bold>true</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background: 	#FFFFFF;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}
+
+QPushButton::hover
+{
+	background: 	#d0deff;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Mesh Doctor</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>12</y>
+        <width>64</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <weight>75</weight>
+        <bold>true</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background: 	#FFFFFF;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}
+
+QPushButton::hover
+{
+	background: 	#d0deff;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Algo_1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>60</y>
+        <width>64</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <weight>75</weight>
+        <bold>true</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background: 	#FFFFFF;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}
+
+QPushButton::hover
+{
+	background: 	#d0deff;
+	border:			2px solid #5480EA;
+	border-radius: 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Algo_2</string>
+      </property>
+     </widget>
+     <zorder>pushButton</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton_3</zorder>
+     <zorder>frame_2</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Tools</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Cloud</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Mesh</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_8">
+     <attribute name="title">
+      <string>Parametric</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>194</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane
+{
+	background:				#FFFFFF;
+	border-top: 					1px solid #5480EA;
+	border-bottom: 			8px solid #5480EA;	
+	border-right:				1px solid #5480EA;
+    top:								-1px;
+}
+
+QTabWidget::tab-bar
+{
+	background:				#FCFCFC;
+}
+
+QTabBar::tab 
+{
+    background: 				#5480EA;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #5480EA;
+    width: 							96px;
+	height:							24px;
+}
+
+QTabBar::tab:selected
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+    width: 							96px;
+	height:							24px;
+}
+
+QTabBar::tab:hover
+{
+    background: 				#3C6FEA;
+    border-bottom:			1px solid #5480EA;
+}
+
+QTabBar::tab:selected:hover
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+    width: 							96px;
+	height:							24px;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Model Tree</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Properties</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>206</x>
+      <y>140</y>
+      <width>1712</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane
+{
+	background:				#FFFFFF;
+	border-top: 					1px solid #5480EA;
+	border-bottom: 			8px solid #5480EA;	
+	border-right:				1px solid #5480EA;
+	border-left:					1px solid #5480EA;
+    top:								-1px;
+}
+
+QTabWidget::tab-bar
+{
+	background:				#FCFCFC;
+}
+
+QTabBar::tab 
+{
+    background: 				#5480EA;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #5480EA;
+	border-left:					1px solid #5480EA;
+    width: 							192px;
+	height:							24px;
+}
+
+QTabBar::tab:selected
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+	border-left:					1px solid #5480EA;
+    width: 							192px;
+	height:							24px;
+}
+
+QTabBar::tab:hover
+{
+    background: 				#3C6FEA;
+    border-bottom:			1px solid #5480EA;
+}
+
+QTabBar::tab:first:selected
+{
+	border-left:					1px solid #5480EA;
+}
+
+QTabBar::tab:selected:hover
+{
+    background: 				#FFFFFF;
+    border-top: 					1px solid #5480EA;
+    border-right: 				1px solid #5480EA;
+    border-bottom:			1px solid #FFFFFF;
+	border-left:					1px solid #5480EA;
+    width: 							192px;
+	height:							24px;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab_11">
+     <attribute name="title">
+      <string>Head.stl</string>
+     </attribute>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>1706</width>
+        <height>730</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame
+{
+	background: #FFFFFF;
+	border: 1px solid#5480EA;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <zorder>frame_2</zorder>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>916</y>
+      <width>1920</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame
+{
+	background: #FFFFFF;
+	border-top: 4px solid#5480EA;
+	border-bottom: 8px solid#5480EA;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
